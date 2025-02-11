@@ -1,0 +1,199 @@
+
+        .shefu-multi-select-dropdown {
+            position: relative;
+            width: 100%;
+            max-width: 300px;
+            font-family: Arial, sans-serif;
+            margin-bottom: 10px;
+        }
+
+        /* Size Variants */
+        .shefu-multi-select-dropdown.small {
+            max-width: 200px;
+            font-size: 12px;
+        }
+
+        .shefu-multi-select-dropdown.medium {
+            max-width: 300px;
+            font-size: 14px;
+        }
+
+        .shefu-multi-select-dropdown.large {
+            max-width: 400px;
+            font-size: 16px;
+        }
+
+        /* Button Styles */
+        .shefu-multi-select-dropdown .shefu-dropdown-btn {
+            width: 100%;
+            background: white;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            text-align: left;
+            border-radius: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: all 0.3s ease;
+        }
+
+        .shefu-multi-select-dropdown .shefu-dropdown-btn:hover {
+            border-color: #666;
+            background-color: #f8f9fa;
+        }
+
+        /* Size-specific button padding */
+        .shefu-multi-select-dropdown.small .shefu-dropdown-btn {
+            padding: 6px 8px;
+        }
+
+        .shefu-multi-select-dropdown.medium .shefu-dropdown-btn {
+            padding: 8px 12px;
+        }
+
+        .shefu-multi-select-dropdown.large .shefu-dropdown-btn {
+            padding: 12px 16px;
+        }
+
+        /* Dropdown Content */
+        .shefu-multi-select-dropdown .shefu-dropdown-content {
+            display: none;
+            position: absolute;
+            width: 100%;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 2px;
+            overflow-y: auto;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Size-specific dropdown max-height */
+        .shefu-multi-select-dropdown.small .shefu-dropdown-content {
+            max-height: 200px;
+        }
+
+        .shefu-multi-select-dropdown.medium .shefu-dropdown-content {
+            max-height: 300px;
+        }
+
+        .shefu-multi-select-dropdown.large .shefu-dropdown-content {
+            max-height: 400px;
+        }
+
+        /* Search Box */
+        .shefu-search-box {
+            width: calc(100% - 20px);
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        .shefu-search-box:focus {
+            border-color: #4a90e2;
+            outline: none;
+        }
+
+        /* Size-specific search box */
+        .shefu-multi-select-dropdown.small .shefu-search-box {
+            padding: 4px 6px;
+            font-size: 12px;
+        }
+
+        .shefu-multi-select-dropdown.medium .shefu-search-box {
+            padding: 6px 8px;
+            font-size: 14px;
+        }
+
+        .shefu-multi-select-dropdown.large .shefu-search-box {
+            padding: 8px 10px;
+            font-size: 16px;
+        }
+
+        .shefu-multi-select-dropdown .shefu-dropdown-content.show {
+            display: block;
+        }
+
+        /* Option Styles */
+        .shefu-multi-select-dropdown .shefu-option {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            user-select: none;
+            transition: background-color 0.2s ease;
+        }
+
+        /* Size-specific option padding */
+        .shefu-multi-select-dropdown.small .shefu-option {
+            padding: 6px 8px;
+        }
+
+        .shefu-multi-select-dropdown.medium .shefu-option {
+            padding: 8px 10px;
+        }
+
+        .shefu-multi-select-dropdown.large .shefu-option {
+            padding: 10px 12px;
+        }
+
+        .shefu-multi-select-dropdown .shefu-option:hover {
+            background-color: #f1f1f1;
+        }
+
+        .shefu-multi-select-dropdown .shefu-option.selected {
+            background-color: #e3f2fd;
+        }
+
+        .shefu-multi-select-dropdown .shefu-option.hidden {
+            display: none;
+        }
+
+        /* Checkbox Styles */
+        .shefu-multi-select-dropdown .shefu-option input[type="checkbox"] {
+            margin-right: 8px;
+            pointer-events: none;
+        }
+
+        .shefu-multi-select-dropdown .shefu-option label {
+            flex-grow: 1;
+            cursor: pointer;
+            margin: 0;
+            pointer-events: none;
+        }
+
+        /* Theme Variants */
+        .shefu-multi-select-dropdown.primary .shefu-option.selected {
+            background-color: #e3f2fd;
+        }
+
+        .shefu-multi-select-dropdown.success .shefu-option.selected {
+            background-color: #e8f5e9;
+        }
+
+        .shefu-multi-select-dropdown.danger .shefu-option.selected {
+            background-color: #ffebee;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 480px) {
+            .shefu-multi-select-dropdown.small,
+            .shefu-multi-select-dropdown.medium,
+            .shefu-multi-select-dropdown.large {
+                max-width: 100%;
+            }
+
+            .shefu-multi-select-dropdown .shefu-dropdown-content {
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                max-height: 80vh;
+                margin: 10px;
+                width: auto;
+            }
+        }
+ 

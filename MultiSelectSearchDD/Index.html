@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Example Usage with Different Sizes -->
+    <div class="shefu-multi-select-dropdown small" data-placeholder="Small Dropdown">
+        <select id="smallDropdown" multiple>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+    </div>
+
+    <div class="shefu-multi-select-dropdown medium" data-placeholder="Medium Dropdown">
+        <select id="mediumDropdown" multiple>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+    </div>
+
+    <div class="shefu-multi-select-dropdown large" data-placeholder="Large Dropdown">
+        <select id="largeDropdown" multiple>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+    </div>
+
+    <!-- Theme Examples -->
+    <div class="shefu-multi-select-dropdown medium primary" data-placeholder="Primary Theme">
+        <select id="primaryDropdown" multiple>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+    </div>
+
+    <div class="shefu-multi-select-dropdown medium success" data-placeholder="Success Theme">
+        <select id="successDropdown" multiple>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+    </div>
+
+    <div class="shefu-multi-select-dropdown medium danger" data-placeholder="Danger Theme">
+        <select id="dangerDropdown" multiple>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+    </div>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.shefu-multi-select-dropdown').shefuMultiSelectDropdown({
+                onChange: function (selectedValues) {
+                    console.log('Values selected:', selectedValues);
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
